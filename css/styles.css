@@ -619,11 +619,6 @@ color: var(--title-text-color);
 	1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.projects-list .image {
-	margin-left: -1px;
-	margin-top: -1px;
-}
-
 .projects-list .description {
 	padding: 20px 24px;
 	border: 1px solid #EEEEEE;
