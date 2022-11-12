@@ -697,27 +697,24 @@ color: var(--title-text-color);
 
 .modal-backdrop {
 	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
+	top: -50%;
+	left: -50%;
+	width: 200%;
+	height: 200%;
 	background-color: rgba(0, 0, 0, 0.2);
+	transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+	visibility 250ms cubic-bezier(0.4, 0, 0.2, 1),
+	pointer-events 250ms cubic-bezier(0.4, 0, 0.2, 1),
+	transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-hidden {
+	visibility: hidden;
 	opacity: 0;
 	pointer-events: none;
+	transform: scale(0.5);
+	transform-origin: center;
 }
-
-/* .back-modal {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-150%, -50%);
-	width: 528px;
-	height: 581px;
-	
-} */
 
 .modal {
 	position: absolute;
@@ -727,11 +724,6 @@ color: var(--title-text-color);
 	width: 528px;
 	height: 581px;
 	background-color: #ffffff;
-	/* transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); */
-}
-
-.modal::content {
-	transform: translate(-50%, -50%);
 }
 
 .modal-close {
