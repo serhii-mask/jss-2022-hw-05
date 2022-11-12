@@ -705,12 +705,19 @@ color: var(--title-text-color);
 }
 
 .is-hidden {
-	position: absolute;
-	top: 0;
-	left: 0;
-	opacity: 0.5;
+	opacity: 0;
 	pointer-events: none;
 }
+
+/* .back-modal {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-150%, -50%);
+	width: 528px;
+	height: 581px;
+	
+} */
 
 .modal {
 	position: absolute;
@@ -720,6 +727,11 @@ color: var(--title-text-color);
 	width: 528px;
 	height: 581px;
 	background-color: #ffffff;
+	/* transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+}
+
+.modal::content {
+	transform: translate(-50%, -50%);
 }
 
 .modal-close {
