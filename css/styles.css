@@ -712,7 +712,7 @@ color: var(--title-text-color);
 	visibility: hidden;
 	opacity: 0;
 	pointer-events: none;
-	transform: scale(0.5);
+	transform: scale(0);
 	transform-origin: center;
 }
 
